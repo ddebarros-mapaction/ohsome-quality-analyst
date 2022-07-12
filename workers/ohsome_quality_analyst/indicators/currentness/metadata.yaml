@@ -26,3 +26,7 @@ Currentness:
       bad or if there is just nothing to map here.
   result_description: |
       Over 50% of the $elements features ($layer_name) were edited $years.
+  layer-thresholds:
+    - { layer: amenities, thresholds: [ 0.2, null, 0.6, null] }
+    - { layer: building_count, thresholds: [ 0.2, null, 0.6, null] }
+    - { layer: major_roads_count, thresholds: [ 0.2, null, 0.6, null] }
