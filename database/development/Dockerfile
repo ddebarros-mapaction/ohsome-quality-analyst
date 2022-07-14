@@ -18,6 +18,6 @@ RUN bash schema.dev.sh
 RUN mv schema.dev.sql /docker-entrypoint-initdb.d/3-schema.dev.sql || true
 
 # Initialization scripts.
-COPY init_db.development/init-db.sql /docker-entrypoint-initdb.d/1-init-db.sql
-COPY init_db.development/schema.test.sql /docker-entrypoint-initdb.d/2-schema.test.sql
-COPY init_db.development/post-init-db.sql /docker-entrypoint-initdb.d/4-post-init-db.sql
+COPY init-db.sql /docker-entrypoint-initdb.d/1-init-db.sql
+COPY schema.test.sql /docker-entrypoint-initdb.d/2-schema.test.sql
+COPY post-init-db.sql /docker-entrypoint-initdb.d/4-post-init-db.sql
