@@ -20,6 +20,7 @@
 - Substitute Simple Report with a Report named Minimal for testing purposes ([#342] [#385])
 - Add a minimal Indicator for testing purposes ([#383])
 - Remove artifacts of database setup of ohsomeHeX Isea hex-cells ([#310])
+- Restructure database setup ([#310])
 
 ### How to Upgrade
 
