@@ -10,7 +10,7 @@ RUN  apt-get update \
 
 # Download development data if ENV OQT_TEST_DB is False
 # This can not be done during init db by Postgres (Permission error)
-COPY init_db.development/schema.dev.sh .
+COPY schema.dev.sh .
 # Download schema.dev.sql
 RUN bash schema.dev.sh
 # Do not fail if schema.dev.sql does not exist
